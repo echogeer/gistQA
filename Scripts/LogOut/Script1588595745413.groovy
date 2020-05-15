@@ -26,6 +26,13 @@ try{
 	driver.findElement(By.cssSelector(".Header-link:nth-child(1) > .avatar")).click()
 	'Click Button SignOut'
 	driver.findElement(By.cssSelector(".dropdown-signout")).click()
+	
+	/*
+	 * Check Trigger when Display
+	 * */
+	'Click Sign Out Button'
+	driver.findElement(By.xpath("//*[@id='js-pjax-container']/div/form/input[2]")).click()
+	
 		'Wait Page load'
 	WebUI.waitForPageLoad(5)
 	'Varify LogOut Status'

@@ -72,7 +72,7 @@ class fail {
 				KeywordUtil.markErrorAndStop(message)
 
 				'Close browser'
-				//WebUI.closeBrowser()
+			//WebUI.closeBrowser()
 				break
 		}
 	}

@@ -38,7 +38,8 @@ try{
 	driver.findElement(By.name("gist[public]")).click()
 	
 	'Validate Create Success'
-	def CreateStatus= katalon.isElementPresent("xpath=//*[@id='gist-pjax-container'']/div[1]/div/div[1]/h1/strong/a")
+	//def CreateStatus= katalon.isElementPresent("xpath=//*[@id='gist-pjax-container'']/div[1]/div/div[1]/h1/strong/a")
+	def CreateStatus= katalon.isElementPresent("xpath=//*[@id='gist-pjax-container']/div[1]/div/div[1]/h1/span[1]/a")
 	
 	'Validate Create Status'
 	if(CreateStatus == true){

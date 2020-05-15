@@ -25,14 +25,14 @@ try{
 	'Click Button Signin'
 	katalon.click("link=Sign in")
 	'Input UserName'
-	katalon.type("id=login_field",userName)
+	katalon.type("id=login_field","echogeer@gmail.com")
 	'Input Password'
-	katalon.type("id=password", pass)
+	katalon.type("id=password", "683127ndz")
 	'Click commit sign in'
 	katalon.click("name=commit")
 	'wait load page'
-	katalon.waitForPageToLoad("5")
-	WebUI.waitForPageLoad(5)
+	//katalon.waitForPageToLoad("5")
+	//WebUI.waitForPageLoad(10)
 	
 	'Verify Login Success'
 	def loginSuccess = katalon.isElementPresent("class=avatar avatar-user")
